@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.base-button {
+    border: none;
+    border-radius: 80px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+
+    &:disabled {
+        background-color: $primary-gray;
+        color: white;
+    }
+
+    &-base {
+        // padding: 4px 37px;
+        width: 6.25rem;
+        height: 2.125rem;
+    }
+
+    &-big {
+        // padding: 4px 46px;
+        width: 7.5rem;
+        height: 2.125rem;
+    }
+
+    &-yellow {
+        background-color: $primary-yellow;
+        color: black;
+
+        &:hover{
+            background-color: $secondary-yellow ;
+        }
+    }
+
+
+}
