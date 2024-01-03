@@ -1,21 +1,16 @@
-import React from 'react'
-
-import './styles.scss'
-
 const Button = ({
-  children,
+  title,
   type = 'yellow',
-  size = 'base',
   disabled = false,
-  onClick,
+  onClick = () => {},
 }) => {
   return (
     <button
-      className={`base-button base-button-${size} base-button-${type}`}
+      className={`base-button base-button-${type}`}
       disabled={disabled}
       onClick={onClick}
     >
-      {children}
+      {title}
     </button>
   )
 }

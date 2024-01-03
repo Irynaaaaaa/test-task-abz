@@ -1,0 +1,15 @@
+.common-section-styles {
+    padding: 13px 16px;
+  
+    @media ( min-width: 768px) {
+        padding: 13px 32px;
+    }
+  
+    @media (min-width: 1024px) {
+        padding: 17px 60px;
+    }
+  
+    @media (min-width: 2560px) {
+        padding: 17px 0;
+    }
+  }

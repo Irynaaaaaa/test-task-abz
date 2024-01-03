@@ -1,18 +1,18 @@
-import React from 'react'
-
 import Button from '../../components/Button/Button'
 
 import logo from '../../assets/icons/Logo.svg'
-import './styles.scss'
 
 const Header = () => {
+  const onUsersClick = () => (window.location.href = '#users_section')
+  const onSignUpClick = () => (window.location.href = '#users_section')
+
   return (
-    <header className="app-header">
+    <header className="common-section-styles app-header">
       <img src={logo} alt="logo" />
 
       <div className="header-buttons">
-        <Button>Users</Button>
-        <Button>Sign Up</Button>
+        <Button title="Users" onClick={onUsersClick} />
+        <Button title="Sign Up" onClick={onSignUpClick} />
       </div>
     </header>
   )

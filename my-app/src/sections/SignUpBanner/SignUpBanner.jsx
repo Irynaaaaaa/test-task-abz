@@ -1,6 +1,3 @@
-import React from 'react'
-
-import './styles.scss'
 import Button from '../../components/Button/Button'
 
 const SignUpBanner = () => {
@@ -16,7 +13,7 @@ const SignUpBanner = () => {
           mind. They should also be excited to learn, as the world of Front-End
           Development keeps evolving.
         </span>
-        <Button>Sign up</Button>
+        <Button title="Sign Up" />
       </div>
     </section>
   )

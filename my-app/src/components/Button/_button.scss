@@ -1,0 +1,26 @@
+.base-button {
+    border-radius: 80px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    min-width: 100px;
+    padding: 4px 19px 4px 18px;
+
+    &:disabled {
+        background-color: $disabled-gray;
+        color: white;
+        cursor: auto;
+
+        &:hover{
+            background-color: $disabled-gray;
+        }
+    }
+
+    &-yellow {
+        background-color: $primary-yellow;
+        color: black;
+
+        &:hover{
+            background-color: $hover-yellow ;
+        }
+    }
+}

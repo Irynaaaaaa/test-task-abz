@@ -1,27 +1,11 @@
-*{
-  box-sizing:border-box;
-  font-family: 'Nunito', sans-serif;
-}
+@import './styles/variables';
+@import './styles/reset';
+@import './styles/common';
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import './components/Button/button';
 
+@import './styles/app';
 
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
+@import './sections/Header/header';
+@import './sections/SignUpBanner/signUpBanner';
+@import './sections/Users/users';
