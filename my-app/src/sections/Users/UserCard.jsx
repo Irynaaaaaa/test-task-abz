@@ -1,3 +1,4 @@
+import TextClipperWithTooltip from '../../components/TextClipperWithTooltip/TextClipperWithTooltip'
 import defaultPhoto from './../../assets/icons/user-photo-default.svg'
 
 const User = ({ userData }) => {
@@ -6,10 +7,19 @@ const User = ({ userData }) => {
   return (
     <li className="user-card">
       <img src={photo || defaultPhoto} alt="user" className="user-card-photo" />
-      <span className="user-card-name">{name}</span>
+      <TextClipperWithTooltip
+        id="user-card-name"
+        content={name}
+        className="user-card-name"
+        noArrow
+      />
       <div className="user-card-info">
-        <span>{position}</span>
-        <span>{email}</span>
+        <TextClipperWithTooltip
+          id="user-card-position"
+          content={position}
+          noArrow
+        />
+        <TextClipperWithTooltip id="user-card-email" content={email} noArrow />
         <span>{phone}</span>
       </div>
     </li>

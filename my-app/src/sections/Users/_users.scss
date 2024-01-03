@@ -19,8 +19,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: auto ;
-    // align-items: center;
-    // justify-content: center;
+    justify-content: center;
     gap: 20px;
 
     @media ( min-width: 768px) {
@@ -32,10 +31,6 @@
         grid-template-columns: auto auto auto;
         gap: 29px;
     }
-
-    // @media (min-width: 2560px) {
-    //     grid-template-columns: auto auto auto;
-    // }
 
 }
 
