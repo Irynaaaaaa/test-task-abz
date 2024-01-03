@@ -7,3 +7,7 @@ export const API = axios.create({
 export const getUsers = (page = 1, count = 6) => {
   return API.get(`/users?page=${page}&count=${count}`).then((res) => res.data)
 }
+
+export const getPositions = () => {
+  return API.get('/positions').then((res) => res.data)
+}

@@ -1,0 +1,37 @@
+
+.formik-upload-photo{
+    margin-bottom: 47px;
+}
+
+.upload-photo-pseudo-field{
+    position: relative;
+    width: 328px;
+    height: 54px;
+    border: 1px solid $border-gray;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+
+    @media ( min-width: 768px) {
+        width: 380px;
+    }
+
+    span{
+        color: $dark-gray;
+        padding-left: 99px;
+    }
+}
+
+.upload-photo-pseudo-button{
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    border-radius: 4px 0px 0px 4px;
+    width: 83px;
+    height: 53px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

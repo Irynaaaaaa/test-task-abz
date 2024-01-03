@@ -1,14 +1,16 @@
 const Button = ({
   title,
-  type = 'yellow',
+  color = 'yellow',
   disabled = false,
-  onClick = () => {},
+  onClick = () => null,
+  ...restProps
 }) => {
   return (
     <button
-      className={`base-button base-button-${type}`}
+      className={`base-button base-button-${color}`}
       disabled={disabled}
       onClick={onClick}
+      {...restProps}
     >
       {title}
     </button>

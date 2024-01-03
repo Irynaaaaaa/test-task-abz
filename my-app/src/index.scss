@@ -3,9 +3,14 @@
 @import './styles/common';
 
 @import './components/Button/button';
+@import './components/Input/input';
 
 @import './styles/app';
 
 @import './sections/Header/header';
 @import './sections/SignUpBanner/signUpBanner';
 @import './sections/Users/users';
+@import './sections/UserRegistration/userRegistration';
+@import './sections/UserRegistration/RegistrationForm/registrationForm';
+@import './sections/UserRegistration/FormikPhotoUploader/formikPhotoUploader';
+@import './sections/UserRegistration/FormikPositionsList/positions'

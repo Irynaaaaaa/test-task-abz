@@ -1,4 +1,5 @@
 import Button from '../../components/Button/Button'
+import { onSignUpNavigation } from '../../constants'
 
 const SignUpBanner = () => {
   return (
@@ -13,7 +14,7 @@ const SignUpBanner = () => {
           mind. They should also be excited to learn, as the world of Front-End
           Development keeps evolving.
         </span>
-        <Button title="Sign Up" />
+        <Button title="Sign Up" onClick={onSignUpNavigation} />
       </div>
     </section>
   )
