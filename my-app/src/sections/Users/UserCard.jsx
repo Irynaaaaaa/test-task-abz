@@ -1,12 +1,20 @@
+import { useState } from 'react'
 import TextClipperWithTooltip from '../../components/TextClipperWithTooltip/TextClipperWithTooltip'
 import defaultPhoto from './../../assets/icons/user-photo-default.svg'
 
 const User = ({ userData }) => {
+  const [isError, setIsError] = useState(false)
+
   const { email, name, phone, photo, position } = userData
 
   return (
     <li className="user-card">
-      <img src={photo || defaultPhoto} alt="user" className="user-card-photo" />
+      <img
+        src={isError ? defaultPhoto : photo}
+        alt="user"
+        className="user-card-photo"
+        onError={() => setIsError(true)}
+      />
       <TextClipperWithTooltip
         id="user-card-name"
         content={name}

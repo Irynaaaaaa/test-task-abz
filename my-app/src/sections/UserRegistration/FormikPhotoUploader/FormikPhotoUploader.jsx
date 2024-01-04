@@ -28,6 +28,7 @@ const FormikPhotoUploaderField = (props) => {
         ref={inputRef}
         onChange={(event) => {
           setFieldValue(field.name, event.currentTarget.files[0])
+          event.target.value = ''
         }}
       />
 

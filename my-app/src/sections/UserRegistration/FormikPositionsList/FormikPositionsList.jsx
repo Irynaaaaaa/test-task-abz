@@ -27,7 +27,6 @@ const FormikPositionsList = (props) => {
               id={id}
               checked={field.value === id}
               onChange={() => {
-                console.log(id)
                 setFieldValue(field.name, id)
               }}
             />

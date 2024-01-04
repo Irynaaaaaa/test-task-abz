@@ -19,6 +19,9 @@
         line-height: 26px;
     }
     
+    &-error{
+        border-color: $error-red;
+    }
 }
 
 .helper-text{

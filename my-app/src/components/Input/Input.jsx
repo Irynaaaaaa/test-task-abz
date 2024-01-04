@@ -12,7 +12,6 @@ const Input = forwardRef(
       name = '',
       onChange = () => null,
       error,
-      inputRef,
       ...restProps
     },
     ref
@@ -21,10 +20,11 @@ const Input = forwardRef(
       <div className="input-wrapper">
         <label htmlFor={label}>{label}</label>
         <input
-          className="base-input"
+          className={`base-input ${error ? 'base-input-error' : ''}`}
           type={type}
           id={label}
           name={name}
+          value={value}
           placeholder={placeholder}
           onChange={onChange}
           ref={ref}
